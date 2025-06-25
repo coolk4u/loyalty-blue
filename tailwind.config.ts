@@ -63,26 +63,28 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				enterprise: {
-					'primary': '#1e3a8a',
+				modern: {
+					'primary': '#2563eb',
+					'primary-dark': '#1d4ed8',
+					'primary-light': '#3b82f6',
 					'secondary': '#1e40af',
-					'accent': '#3b82f6',
+					'accent': '#60a5fa',
 					'success': '#10b981',
 					'warning': '#f59e0b',
 					'danger': '#ef4444',
 					'light': '#eff6ff',
 					'dark': '#0f172a',
 					'muted': '#64748b',
-					'slate-50': '#f8fafc',
-					'slate-100': '#f1f5f9',
-					'slate-200': '#e2e8f0',
-					'slate-300': '#cbd5e1',
-					'slate-400': '#94a3b8',
-					'slate-500': '#64748b',
-					'slate-600': '#475569',
-					'slate-700': '#334155',
-					'slate-800': '#1e293b',
-					'slate-900': '#0f172a'
+					'blue-50': '#eff6ff',
+					'blue-100': '#dbeafe',
+					'blue-200': '#bfdbfe',
+					'blue-300': '#93c5fd',
+					'blue-400': '#60a5fa',
+					'blue-500': '#3b82f6',
+					'blue-600': '#2563eb',
+					'blue-700': '#1d4ed8',
+					'blue-800': '#1e40af',
+					'blue-900': '#1e3a8a'
 				},
 				loyalty: {
 					'gold': '#fbbf24',
@@ -163,11 +165,11 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'enterprise-gradient': 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 25%, #1e40af 50%, #3b82f6 75%, #60a5fa 100%)',
-				'card-gradient': 'linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%)',
-				'glass-gradient': 'linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%)',
-				'professional-gradient': 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
-				'modern-gradient': 'linear-gradient(135deg, #60a5fa 0%, #2563eb 100%)'
+				'modern-gradient': 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 25%, #1e40af 50%, #3b82f6 75%, #60a5fa 100%)',
+				'card-gradient': 'linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%)',
+				'glass-gradient': 'linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(29, 78, 216, 0.1) 100%)',
+				'professional-gradient': 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+				'blue-gradient': 'linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)'
 			}
 		}
 	},

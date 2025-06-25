@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,17 +103,29 @@
   }
 }
 
-/* Enterprise Blue Theme Variables */
+/* Modern Blue Theme Variables - Inspired by the reference design */
 :root {
-  --enterprise-primary: #1e3a8a;
-  --enterprise-secondary: #1e40af;
-  --enterprise-accent: #3b82f6;
-  --enterprise-success: #10b981;
-  --enterprise-warning: #f59e0b;
-  --enterprise-danger: #ef4444;
-  --enterprise-light: #f8fafc;
-  --enterprise-dark: #0f172a;
-  --enterprise-muted: #64748b;
+  --modern-primary: #2563eb;
+  --modern-primary-dark: #1d4ed8;
+  --modern-primary-light: #3b82f6;
+  --modern-secondary: #1e40af;
+  --modern-accent: #60a5fa;
+  --modern-success: #10b981;
+  --modern-warning: #f59e0b;
+  --modern-danger: #ef4444;
+  --modern-light: #f8fafc;
+  --modern-dark: #0f172a;
+  --modern-muted: #64748b;
+  --modern-blue-50: #eff6ff;
+  --modern-blue-100: #dbeafe;
+  --modern-blue-200: #bfdbfe;
+  --modern-blue-300: #93c5fd;
+  --modern-blue-400: #60a5fa;
+  --modern-blue-500: #3b82f6;
+  --modern-blue-600: #2563eb;
+  --modern-blue-700: #1d4ed8;
+  --modern-blue-800: #1e40af;
+  --modern-blue-900: #1e3a8a;
   --loyalty-gold: #fbbf24;
   --loyalty-accent: #60a5fa;
   --loyalty-silver: #475569;
@@ -120,28 +133,28 @@
   --loyalty-deep-blue: #1e3a8a;
 }
 
-/* Modern Glass Morphism */
+/* Modern Glass Morphism with Blue Theme */
 .glass-card {
-  background: rgba(248, 250, 252, 0.9);
+  background: rgba(239, 246, 255, 0.95);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 8px 32px rgba(30, 58, 138, 0.1);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
 }
 
 .glass-card-dark {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(96, 165, 250, 0.2);
-  box-shadow: 0 8px 32px rgba(30, 58, 138, 0.1);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
 }
 
-/* Modern Gradients */
+/* Modern Blue Gradients */
 .gradient-primary {
-  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
 }
 
 .gradient-secondary {
-  background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
 }
 
 .gradient-success {
@@ -149,23 +162,23 @@
 }
 
 .gradient-enterprise {
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
 }
 
-/* Lighter Purple Mobile Background with White Gradient */
+/* Modern Blue Mobile Background */
 .mobile-bg {
-  background: linear-gradient(135deg, #c084fc 0%, #a855f7 30%, #9333ea 70%, #7c3aed 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 30%, #1d4ed8 70%, #1e40af 100%);
 }
 
-/* Professional Off-white Background similar to login page */
+/* Professional Blue Background similar to reference design */
 .enterprise-bg {
-  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%);
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
 }
 
 .loyalty-gradient {
-  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%);
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
 }
@@ -182,25 +195,25 @@
   }
 }
 
-/* Modern Shadows */
+/* Modern Blue Shadows */
 .shadow-enterprise {
-  box-shadow: 0 4px 20px rgba(30, 58, 138, 0.15), 0 2px 4px rgba(30, 58, 138, 0.1);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15), 0 2px 4px rgba(37, 99, 235, 0.1);
 }
 
 .shadow-enterprise-lg {
-  box-shadow: 0 20px 60px rgba(30, 58, 138, 0.2), 0 8px 20px rgba(30, 58, 138, 0.15);
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2), 0 8px 20px rgba(37, 99, 235, 0.15);
 }
 
-/* Glass gradient backgrounds */
+/* Glass gradient backgrounds with blue theme */
 .bg-glass-gradient {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.9) 0%, rgba(219, 234, 254, 0.9) 100%);
 }
 
 .bg-card-gradient {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(239, 246, 255, 0.9) 100%);
 }
 
-/* Bottom Navigation */
+/* Bottom Navigation with Blue Theme */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -208,7 +221,7 @@
   right: 0;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(168, 85, 247, 0.2);
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
   padding: 12px 0 8px 0;
   z-index: 50;
 }
