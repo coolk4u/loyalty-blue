@@ -21,9 +21,9 @@ const LoyaltyDetails = () => {
 
   const getIcon = (type: string, source: string) => {
     if (type === 'accrual') {
-      return source === 'QR Scan' ? <QrCode className="w-5 h-5 text-blue-600" /> : <FileText className="w-5 h-5 text-orange-600" />;
+      return source === 'QR Scan' ? <QrCode className="w-5 h-5 text-blue-600" /> : <FileText className="w-5 h-5 text-blue-500" />;
     } else {
-      return source === 'Bank Transfer' ? <Banknote className="w-5 h-5 text-green-600" /> : <Gift className="w-5 h-5 text-purple-600" />;
+      return source === 'Bank Transfer' ? <Banknote className="w-5 h-5 text-green-600" /> : <Gift className="w-5 h-5 text-blue-500" />;
     }
   };
 
@@ -31,11 +31,11 @@ const LoyaltyDetails = () => {
   const totalRedemptions = transactions.filter(t => t.type === 'redemption').length;
 
   return (
-    <div className="min-h-screen enterprise-bg text-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900">
       <div className="flex items-center justify-between p-6 pt-12">
         <div className="flex items-center space-x-3">
           <Link to="/">
-            <Button variant="ghost" size="icon" className="text-gray-900 hover:bg-black/10">
+            <Button variant="ghost" size="icon" className="text-gray-900 hover:bg-gray-200">
               <ArrowLeft className="w-5 h-5" />
             </Button>
           </Link>
@@ -46,7 +46,7 @@ const LoyaltyDetails = () => {
       <div className="px-6">
         {/* Summary Cards */}
         <div className="grid grid-cols-2 gap-4 mb-6">
-          <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4">
+          <Card className="bg-white border-gray-200 backdrop-blur-lg p-4 shadow-lg">
             <div className="flex items-center space-x-3">
               <TrendingUp className="w-8 h-8 text-green-600" />
               <div>
@@ -56,7 +56,7 @@ const LoyaltyDetails = () => {
             </div>
           </Card>
 
-          <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4">
+          <Card className="bg-white border-gray-200 backdrop-blur-lg p-4 shadow-lg">
             <div className="flex items-center space-x-3">
               <TrendingDown className="w-8 h-8 text-red-600" />
               <div>
@@ -68,11 +68,11 @@ const LoyaltyDetails = () => {
         </div>
 
         {/* Transaction History */}
-        <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4 mb-6">
+        <Card className="bg-white border-gray-200 backdrop-blur-lg p-4 mb-6 shadow-lg">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Last 10 Transactions</h3>
           <div className="space-y-3">
             {transactions.map((transaction) => (
-              <div key={transaction.id} className="flex items-center justify-between p-3 bg-gray-100 rounded-lg border border-gray-200">
+              <div key={transaction.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg border border-gray-200">
                 <div className="flex items-center space-x-3">
                   {getIcon(transaction.type, transaction.source)}
                   <div>

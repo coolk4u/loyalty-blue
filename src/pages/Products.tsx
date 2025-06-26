@@ -100,50 +100,50 @@ const Products = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-off-white text-black">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900">
       {/* Header */}
       <div className="flex items-center justify-between p-6 pt-12">
         <div className="flex items-center space-x-3">
           <Link to="/">
-            <Button variant="ghost" size="icon" className="text-black hover:bg-black/10">
+            <Button variant="ghost" size="icon" className="text-gray-900 hover:bg-gray-200">
               <ArrowLeft className="w-5 h-5" />
             </Button>
           </Link>
-          <h1 className="text-xl font-bold text-black">MYK Laticrete Products</h1>
+          <h1 className="text-xl font-bold text-gray-900">MYK Laticrete Products</h1>
         </div>
-        <Package className="w-6 h-6 text-loyalty-accent" />
+        <Package className="w-6 h-6 text-blue-600" />
       </div>
 
       <div className="px-6 pb-6">
         <div className="grid gap-4">
           {products.map((product) => (
-            <Card key={product.id} className="bg-glass-gradient border-white/10 backdrop-blur-lg p-6">
+            <Card key={product.id} className="bg-white border-gray-200 backdrop-blur-lg p-6 shadow-lg">
               <div className="flex justify-between items-start mb-3">
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-black mb-1">{product.name}</h3>
-                  <p className="text-loyalty-accent text-sm font-medium">{product.category}</p>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{product.name}</h3>
+                  <p className="text-blue-600 text-sm font-medium">{product.category}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-loyalty-gold text-xl font-bold">{product.price}</p>
-                  <p className="text-gray-700 text-sm">{product.weight}</p>
+                  <p className="text-blue-600 text-xl font-bold">{product.price}</p>
+                  <p className="text-gray-600 text-sm">{product.weight}</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-1 mb-3">
-                <Star className="w-4 h-4 text-loyalty-gold fill-current" />
-                <span className="text-black font-medium">{product.rating}</span>
-                <span className="text-gray-700 text-sm">rating</span>
+                <Star className="w-4 h-4 text-blue-600 fill-current" />
+                <span className="text-gray-900 font-medium">{product.rating}</span>
+                <span className="text-gray-600 text-sm">rating</span>
               </div>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {product.features.map((feature, index) => (
-                  <span key={index} className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">
+                  <span key={index} className="bg-blue-50 text-blue-700 text-xs px-2 py-1 rounded">
                     {feature}
                   </span>
                 ))}
               </div>
 
-              <Button className="w-full bg-loyalty-accent hover:bg-loyalty-accent/90 text-white">
+              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                 View Details
               </Button>
             </Card>

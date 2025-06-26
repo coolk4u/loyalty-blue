@@ -53,10 +53,10 @@ const BottomNavigation = ({ userRole }: BottomNavProps) => {
               key={index}
               to={item.path}
               className={`flex flex-col items-center space-y-1 transition-colors ${
-                isActive ? 'text-modern-primary' : 'text-gray-600'
+                isActive ? 'text-blue-600' : 'text-gray-600'
               }`}
             >
-              <item.icon className={`w-5 h-5 ${isActive ? 'text-modern-primary' : 'text-gray-600'}`} />
+              <item.icon className={`w-5 h-5 ${isActive ? 'text-blue-600' : 'text-gray-600'}`} />
               <span className="text-xs font-medium">{item.label}</span>
             </Link>
           );
