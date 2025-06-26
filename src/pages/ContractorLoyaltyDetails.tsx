@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -26,7 +25,7 @@ const ContractorLoyaltyDetails = () => {
   const uniqueMasons = [...new Set(transactions.map(t => t.mason))].length;
 
   return (
-    <div className="min-h-screen enterprise-bg text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900">
       <div className="flex items-center justify-between p-6 pt-12">
         <div className="flex items-center space-x-3">
           <Link to="/contractor-dashboard">
@@ -41,7 +40,7 @@ const ContractorLoyaltyDetails = () => {
       <div className="px-6">
         {/* Summary Cards */}
         <div className="grid grid-cols-3 gap-4 mb-6">
-          <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4">
+          <Card className="bg-white border-gray-200 backdrop-blur-lg p-4">
             <div className="flex items-center space-x-3">
               <Award className="w-8 h-8 text-yellow-600" />
               <div>
@@ -51,7 +50,7 @@ const ContractorLoyaltyDetails = () => {
             </div>
           </Card>
 
-          <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4">
+          <Card className="bg-white border-gray-200 backdrop-blur-lg p-4">
             <div className="flex items-center space-x-3">
               <TrendingUp className="w-8 h-8 text-green-600" />
               <div>
@@ -61,7 +60,7 @@ const ContractorLoyaltyDetails = () => {
             </div>
           </Card>
 
-          <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4">
+          <Card className="bg-white border-gray-200 backdrop-blur-lg p-4">
             <div className="flex items-center space-x-3">
               <Users className="w-8 h-8 text-blue-600" />
               <div>
@@ -73,7 +72,7 @@ const ContractorLoyaltyDetails = () => {
         </div>
 
         {/* Transaction History */}
-        <Card className="glass-card-dark border-blue-200 backdrop-blur-lg p-4 mb-6">
+        <Card className="bg-white border-gray-200 backdrop-blur-lg p-4 mb-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Mason Points History</h3>
           <div className="space-y-3">
             {transactions.map((transaction) => (

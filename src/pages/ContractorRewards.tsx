@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -48,7 +47,7 @@ const ContractorRewards = () => {
   };
 
   return (
-    <div className="min-h-screen bg-off-white text-black">
+    <div className="min-h-screen bg-white text-black">
       <div className="p-6">
         <div className="flex items-center mb-6">
           <Link to="/contractor-dashboard">
@@ -60,7 +59,7 @@ const ContractorRewards = () => {
         </div>
 
         {/* Available Points */}
-        <Card className="bg-glass-gradient border-gray-200 mb-6">
+        <Card className="bg-white border-gray-200 mb-6">
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
@@ -81,7 +80,7 @@ const ContractorRewards = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {rewards.map((reward) => (
-              <Card key={reward.id} className="bg-glass-gradient border-gray-200">
+              <Card key={reward.id} className="bg-white border-gray-200">
                 <CardContent className="p-4">
                   <div className="flex space-x-4">
                     <img

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -31,7 +30,7 @@ const LoyaltyDetails = () => {
   const totalRedemptions = transactions.filter(t => t.type === 'redemption').length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900">
       <div className="flex items-center justify-between p-6 pt-12">
         <div className="flex items-center space-x-3">
           <Link to="/">

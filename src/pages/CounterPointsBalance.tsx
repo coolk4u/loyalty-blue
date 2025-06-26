@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -77,7 +76,7 @@ const CounterPointsBalance = () => {
   const totalRedeemed = customers.reduce((sum, customer) => sum + customer.redeemedThisMonth, 0);
 
   return (
-    <div className="min-h-screen enterprise-bg text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Header */}
       <div className="flex items-center space-x-4 p-6 pt-12">
         <Button 
@@ -100,19 +99,19 @@ const CounterPointsBalance = () => {
       {/* Summary Stats */}
       <div className="px-6 mb-6">
         <div className="grid grid-cols-3 gap-4">
-          <Card className="glass-card-dark border-gray-200 p-4 text-center">
+          <Card className="bg-white border-gray-200 p-4 text-center">
             <Star className="w-6 h-6 text-yellow-600 mx-auto mb-2" />
             <p className="text-sm text-gray-600">Total Points</p>
             <p className="text-xl font-bold text-gray-900">{totalPoints.toLocaleString()}</p>
           </Card>
           
-          <Card className="glass-card-dark border-gray-200 p-4 text-center">
+          <Card className="bg-white border-gray-200 p-4 text-center">
             <TrendingUp className="w-6 h-6 text-green-600 mx-auto mb-2" />
             <p className="text-sm text-gray-600">Earned (Month)</p>
             <p className="text-xl font-bold text-gray-900">{totalEarned.toLocaleString()}</p>
           </Card>
           
-          <Card className="glass-card-dark border-gray-200 p-4 text-center">
+          <Card className="bg-white border-gray-200 p-4 text-center">
             <TrendingDown className="w-6 h-6 text-red-600 mx-auto mb-2" />
             <p className="text-sm text-gray-600">Redeemed (Month)</p>
             <p className="text-xl font-bold text-gray-900">{totalRedeemed.toLocaleString()}</p>
@@ -137,7 +136,7 @@ const CounterPointsBalance = () => {
       {/* Customer Points List */}
       <div className="px-6 space-y-4">
         {filteredCustomers.map((customer) => (
-          <Card key={customer.id} className="glass-card-dark border-gray-200 p-4">
+          <Card key={customer.id} className="bg-white border-gray-200 p-4">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -65,7 +64,7 @@ const CounterRedeemPoints = () => {
   };
 
   return (
-    <div className="min-h-screen enterprise-bg text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Header */}
       <div className="flex items-center space-x-4 p-6 pt-12">
         <Button 
@@ -87,7 +86,7 @@ const CounterRedeemPoints = () => {
 
       {/* Points Balance */}
       <div className="px-6 mb-6">
-        <Card className="glass-card-dark border-gray-200">
+        <Card className="bg-white border-gray-200">
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
@@ -112,7 +111,7 @@ const CounterRedeemPoints = () => {
             const canRedeem = availablePoints >= reward.points;
             
             return (
-              <Card key={reward.id} className="glass-card-dark border-gray-200">
+              <Card key={reward.id} className="bg-white border-gray-200">
                 <CardContent className="p-4">
                   <div className="flex space-x-4">
                     <img
