@@ -34,7 +34,7 @@ const InfluencerDashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen enterprise-bg text-gray-900 overflow-x-hidden relative pb-20">
+    <div className="min-h-screen bg-gray-50 text-gray-900 overflow-x-hidden relative pb-20">
       {/* Professional Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

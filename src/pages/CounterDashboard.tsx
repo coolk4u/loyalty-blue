@@ -38,7 +38,7 @@ const CounterDashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen enterprise-bg text-gray-900 pb-20">
+    <div className="min-h-screen bg-gray-50 text-gray-900 pb-20">
       {/* Header */}
       <div className="flex items-center justify-between p-6 pt-12">
         <div className="flex items-center space-x-4">
